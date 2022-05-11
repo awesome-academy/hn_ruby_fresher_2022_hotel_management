@@ -36,3 +36,5 @@ yarn-debug.log*
 .yarn-integrity
 /config/database.yml
 /test/*
+.framgia-ci-reports/
+.framgia-ci-result.temp.yml
