@@ -1,0 +1,17 @@
+<header id="header">
+  <a href="index.html" class="logo"><%= image_tag "logo.jpg", :alt => "logo" %></a>
+  <div class="phone"><i class="fa fa-phone"></i>+1 234 567 8900</div>
+  <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
+  <nav class="main-menu top-menu">
+    <ul>
+        <li class="active"><a href="index.html"><%= t ".home" %></a></li>
+        <li><a href="about.html"><%= t ".about" %></a></li>
+        <li><a href="room.html"><%= t ".room" %></a></li>
+        <li><a href="amenities.html"><%= t ".amenities" %></a></li>
+        <li><a href="booking.html"><%= t ".booking" %></a></li>
+        <li><a href="contact.html"><%= t ".contact" %></a></li>
+        <li><a href="login.html"><%= t ".log_in" %></a></li>
+        <li><%= link_to t(".sign_up"), signup_path %></li>
+    </ul>
+  </nav>
+</header>

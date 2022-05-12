@@ -1,0 +1,18 @@
+<% provide :title, t(".provide_title") %>
+<% provide :button_text, t(".provide_btn_title") %>
+
+<div id="login">
+  <div class="container">
+    <div class="section-header">
+      <h2><%= t ".title_page" %></h2>
+      <p>
+          <%= t ".service_html" %>
+      </p>
+    </div>
+    <div class="col-md-12">
+      <div class="login-form">
+        <%= render "form" %>
+      </div>
+    </div>
+  </div>
+</div>
