@@ -8,7 +8,6 @@ Bundler.require(*Rails.groups)
 
 module HnRubyFresher2022HotelManagement
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
     config.i18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :en

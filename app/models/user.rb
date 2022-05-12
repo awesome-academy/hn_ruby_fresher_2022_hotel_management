@@ -5,7 +5,8 @@ class User < ApplicationRecord
   has_many :rooms, dependent: :destroy
   has_many :booking_rooms, dependent: :destroy
 
-  validates :name, presence: true
+  validates :name, presence: true,
+            length: {maximum: Settings.user.name.max_length}
   validates :email, presence: true,
             length: {maximum: Settings.user.email.max_length},
             format: {with: VALID_EMAIL_REGEX}
