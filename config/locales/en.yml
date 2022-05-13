@@ -24,6 +24,7 @@ en:
       about: "About Us"
       home: "Home"
       log_out: "Log Out"
+      account: "Account"
     application:
       title: "Royal Hotel"
   sessions:
