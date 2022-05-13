@@ -1,0 +1,16 @@
+<div class="form">
+<%= form_for @user do |f| %>
+  <%= f.label t(".name") %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <%= f.label t(".email") %>
+  <%= f.email_field :email, class: "form-control" %>
+
+  <%= f.label t(".password") %>
+  <%= f.password_field :password, class: "form-control" %>
+
+  <%= f.label t(".password_confirmation") %>
+  <%= f.password_field :password_confirmation, class: "form-control" %>
+  <%= f.submit yield(:button_text), class: "button" %>
+<% end %>
+</div>

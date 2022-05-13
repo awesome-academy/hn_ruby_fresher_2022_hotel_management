@@ -1,2 +1,27 @@
 en:
-  hello: "Hello world"
+  users:
+    new:
+      provide_title: "Sign Up"
+      provide_btn_title: "Registration"
+      title_page: "Registration"
+      service_html: "Please fill in the information below to create an account"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+    create:
+      registration_error: "Registration Error"
+      registration_success: "Registration Success"
+  layouts:
+    header:
+      sign_up: "Sign Up"
+      log_in: "Log in"
+      contact: "Contact Us"
+      booking: "Booking"
+      amenities: "Amenities"
+      room: "Rooms"
+      about: "About Us"
+      home: "Home"
+    application:
+      title: "Royal Hotel"

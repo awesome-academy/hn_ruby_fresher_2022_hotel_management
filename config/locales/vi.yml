@@ -1,0 +1,27 @@
+vi:
+  users:
+    new:
+      provide_title: "Đăng ký"
+      provide_btn_title: "Đăng ký"
+      title_page: "Đăng ký"
+      service_html: "Vui lòng điền thông tin bên dưới để tạo tài khoản"
+    form:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+    create:
+      registration_error: "Lỗi đăng ký"
+      registration_success: "Đăng ký thành công"
+  layouts:
+    header:
+      sign_up: "Đăng ký"
+      log_in: "Đăng nhập"
+      contact: "Liên hệ chúng tôi"
+      booking: "Đặt trước"
+      amenities: "Tiện nghi"
+      room: "Phòng"
+      about: "Về chúng tôi"
+      home: "Trang chủ"
+    application:
+      title: "Royal Hotel"

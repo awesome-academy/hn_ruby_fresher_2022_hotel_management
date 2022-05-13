@@ -1285,7 +1285,6 @@ input::-ms-input-placeholder {
         margin-bottom: 30px;
     }
 } 
-
 #login .login-form {
     position: relative;
 }
@@ -1311,32 +1310,34 @@ input::-ms-input-placeholder {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
-    input:focus {
-        font-size: 16px;
-        background: #fff;
-    }
+  input:focus {
+    font-size: 16px;
+    background: #fff;
+  }
 }
 
 #login .login-form input[type="text"]:focus,
 #login .login-form input[type="email"]:focus,
 #login .login-form input[type="password"]:focus {
-    border-color: #FFD700;
+  border-color: #FFD700;
 }
 
 #login .login-form button {
-    display: inline-block;
-    padding: 8px 30px;
-    background: #222222;
-    color: #FFD700;
-    font-size: 18px;
-    font-weight: 400;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-    margin-bottom: 15px;
+  display: inline-block;
+  padding: 8px 30px;
+  background: #222222;
+  color: #FFD700;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100%;
 }
 
-#login .login-form button:hover {
+.form .button:hover {
     color: #222222;
     background: #FFD700;
 }
