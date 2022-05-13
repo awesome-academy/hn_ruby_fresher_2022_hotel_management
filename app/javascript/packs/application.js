@@ -10,9 +10,10 @@ import "channels"
 import "./user/main"
 import "./user/contact"
 import "./user/booking"
-import "bootstrap"
 import "@fortawesome/fontawesome-free/css/all"
 
+require("jquery");
+import "bootstrap"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

@@ -24,6 +24,7 @@ vi:
       about: "Về chúng tôi"
       home: "Trang chủ"
       log_out: "Đăng xuất"
+      account: "Tài khoản"
     application:
       title: "Royal Hotel"
   sessions:
