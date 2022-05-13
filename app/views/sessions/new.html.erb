@@ -1,0 +1,32 @@
+<%= provide :title, t(".provide_title") %>
+<div id="login">
+  <div class="container">
+    <div class="section-header">
+      <h2><%= t ".title" %></h2>
+      <p>
+          <%= t ".service_html" %>
+      </p>
+    </div>
+      <div class="col-md-12">
+        <div class="login-form">
+          <%= form_for :session, url: login_path do |f| %>
+
+          <%= f.label :email %>
+          <%= f.email_field :email, class: "form-control" %>
+
+          <%= f.label :password %>
+          <%= link_to t(".forgot_password"), "#" %>
+          <%= f.password_field :password, class: "form-control" %>
+
+          <%= f.label :remember_me, class: "checkbox inline" do %>
+            <%= f.check_box :remember_me %>
+            <span><%= t ".remember" %></span>
+          <% end %>
+          <div class = "submit-btn-login">
+          <%= f.submit t(".btn_title"), class: "button" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+  </div>
+</div>

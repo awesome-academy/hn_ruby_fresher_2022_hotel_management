@@ -10,8 +10,12 @@
         <li><a href="amenities.html"><%= t ".amenities" %></a></li>
         <li><a href="booking.html"><%= t ".booking" %></a></li>
         <li><a href="contact.html"><%= t ".contact" %></a></li>
-        <li><a href="login.html"><%= t ".log_in" %></a></li>
-        <li><%= link_to t(".sign_up"), signup_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to t(".log_out") %></li>
+        <% else %>
+          <li><%= link_to t(".log_in"), login_path %></li>
+          <li><%= link_to t(".sign_up"), signup_path %></li>
+        <% end %>
     </ul>
   </nav>
 </header>

@@ -23,5 +23,16 @@ en:
       room: "Rooms"
       about: "About Us"
       home: "Home"
+      log_out: "Log Out"
     application:
       title: "Royal Hotel"
+  sessions:
+    new:
+      provide_title: "Log in"
+      title: "Login"
+      service_html: "Please fill in the information below to log in"
+      forgot_password: "Forgot Password"
+      remember: "Remember me on this computer"
+      btn_title: "Log in"
+    create:
+      flash_danger: "Invalid email/password combination"

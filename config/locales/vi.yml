@@ -23,5 +23,16 @@ vi:
       room: "Phòng"
       about: "Về chúng tôi"
       home: "Trang chủ"
+      log_out: "Đăng xuất"
     application:
       title: "Royal Hotel"
+  sessions:
+    new:
+      provide_title: "Đăng nhập"
+      title: "Đăng nhập"
+      service_html: "Vui lòng điền thông tin bên dưới để đăng nhập"
+      forgot_password: "Quên mật khẩu"
+      remember: "Hãy nhớ tôi trên máy tính này"
+      btn_title: "Đăng nhập"
+    create:
+      flash_danger: "Kết hợp email / mật khẩu không hợp lệ"
