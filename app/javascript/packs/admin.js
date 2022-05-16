@@ -6,9 +6,9 @@
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
-import "channels"
 import "@fortawesome/fontawesome-free/js/all";
-import jquery from "jquery";
+import "channels"
+import jquery from 'jquery';
 window.$ = window.jquery = jquery;
 
 // import "../stylesheets/application";
@@ -19,13 +19,10 @@ document.addEventListener("turbolinks:load", function() {
     })
 })
 
-require("jquery");
-import "bootstrap"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 require("bootstrap")
 
-import "./user/main"
-import "./user/contact"
-import "./user/booking"
+import "./admin/adminlte"
+import "./admin/bootstrap.bundle.min"
