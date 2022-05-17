@@ -5,6 +5,6 @@ class Admin::AdminController < ApplicationController
 
   private
   def admin_user
-    redirect_to login_path if current_user.try :admin?
+    redirect_to root_path unless current_user.admin?
   end
 end

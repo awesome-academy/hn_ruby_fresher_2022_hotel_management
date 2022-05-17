@@ -37,3 +37,18 @@ en:
       btn_title: "Log in"
     create:
       flash_danger: "Invalid email/password combination"
+  admin:
+    rooms:
+      index:
+        title: "List Rooms"
+        id: "ID"
+        name: "Name"
+        price: "Price"
+        status: "Status"
+        description: "Description"
+        provide_title: "Manage Rooms"
+        create_btn: "Create new room"
+        view_all_btn: "View All Rooms"
+    dash_broad:
+      sidebar:
+        rooms_sidebar: "Manage Rooms"
