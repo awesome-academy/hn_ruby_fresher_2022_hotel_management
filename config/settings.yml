@@ -6,3 +6,7 @@ user:
     min_length: 6
   name:
     max_length: 50
+admin:
+  room:
+    pagy:
+      max_length: 10

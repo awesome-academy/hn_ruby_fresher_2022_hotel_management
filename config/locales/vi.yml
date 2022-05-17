@@ -37,3 +37,18 @@ vi:
       btn_title: "Đăng nhập"
     create:
       flash_danger: "Kết hợp email / mật khẩu không hợp lệ"
+  admin:
+    rooms:
+      index:
+        title: "Danh sách các phòng"
+        id: "ID"
+        name: "Tên"
+        price: "Giá"
+        status: "Tình trạng"
+        description: "Mô tả"
+        provide_title: "Quản lý phòng"
+        create_btn: "Tạo phòng mới"
+        view_all_btn: "Xem tất cả các phòng"
+    dash_broad:
+      sidebar:
+        rooms_sidebar: "Quản lý phòng"

@@ -11,5 +11,6 @@ Rails.application.routes.draw do
     root "dash_broads#index"
 
     resources :dash_broads, only: :index
+    resources :rooms
   end
 end
