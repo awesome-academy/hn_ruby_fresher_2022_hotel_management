@@ -6,4 +6,10 @@ Rails.application.routes.draw do
   get  "/logout", to: "sessions#destroy"
 
   resources :users
+
+  namespace :admin do
+    root "dash_broads#index"
+
+    resources :dash_broads, only: :index
+  end
 end
