@@ -41,7 +41,7 @@ en:
     rooms:
       index:
         title: "List Rooms"
-        id: "ID"
+        id: "STT"
         name: "Name"
         price: "Price"
         status: "Status"
@@ -49,6 +49,13 @@ en:
         provide_title: "Manage Rooms"
         create_btn: "Create new room"
         view_all_btn: "View All Rooms"
+    room_views:
+      index:
+        provide_title: "Room Views"
+        title: "Room Views"
+        id: "STT"
+        name: "Name"
+        create_btn: "Create Room View"
     dash_broad:
       sidebar:
         rooms_sidebar: "Manage Rooms"
