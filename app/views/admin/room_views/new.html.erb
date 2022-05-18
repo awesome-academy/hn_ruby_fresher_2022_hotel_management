@@ -1,0 +1,10 @@
+<% provide :title, t(".provide_title") %>
+<h2 class="col-md-6 offset-3"><%= t ".title" %></h2>
+<div class="col-md-6 offset-3">
+  <%= form_for([:admin, @room_view]) do |f| %>
+    <%= f.label t(".name"), class: "text-color" %>
+    <%= f.text_field :name, class: "form-control mt-2" %>
+    <hr>
+    <%= f.submit t(".btn_create"), class: "btn btn-primary" %>
+  <% end %>
+</div>
