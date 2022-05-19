@@ -10,3 +10,6 @@ admin:
   room:
     pagy:
       max_length: 10
+  room_view:
+    name:
+      max_length: 100

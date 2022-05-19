@@ -56,6 +56,13 @@ en:
         id: "STT"
         name: "Name"
         create_btn: "Create Room View"
+      create:
+        flash_sucsses: "Create sucsses"
+      new:
+        provide_title: "Create room view"
+        title: "Create room view"
+        name: "Name"
+        btn_create: "Create room view"
     dash_broad:
       sidebar:
         rooms_sidebar: "Manage Rooms"

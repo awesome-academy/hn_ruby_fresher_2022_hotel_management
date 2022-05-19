@@ -56,6 +56,13 @@ vi:
         id: "STT"
         name: "Tên"
         create_btn: "Tạo chế độ xem phòng"
+      create:
+        flash_sucsses: "Tạo thành công"
+      new:
+        provide_title: "Tạo chế độ xem phòng"
+        title: "Tạo chế độ xem phòng"
+        name: "Tên"
+        btn_create: "Tạo chế độ xem phòng"
     dash_broad:
       sidebar:
         rooms_sidebar: "Quản lý phòng"
