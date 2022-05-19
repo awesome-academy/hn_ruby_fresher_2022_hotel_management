@@ -49,6 +49,16 @@ vi:
         provide_title: "Quản lý phòng"
         create_btn: "Tạo phòng mới"
         view_all_btn: "Xem tất cả các phòng"
+      new:
+        title: "Tạo phòng mới"
+        provide_title: "Tạo phòng mới"
+        name: "Tên"
+        price: "Giá"
+        description: "Description"
+        add_image: "Thêm hình ảnh"
+        btn_create: "Tạo phòng mới"
+      image_fields:
+        remove_image: "Xóa hình ảnh"
     room_views:
       index:
         provide_title: "Quang cảnh phòng"
@@ -64,5 +74,13 @@ vi:
         name: "Tên"
         btn_create: "Tạo chế độ xem phòng"
     dash_broad:
+      new:
+        name: "Tên"
+        price: "Giá"
+        description: "Mô tả"
+        btn_create: "Tạo phòng mới"
+        provide_title: "Tạo phòng mới"
+        title: "Tạo phòng mới"
+    dash_broads:
       sidebar:
         rooms_sidebar: "Quản lý phòng"

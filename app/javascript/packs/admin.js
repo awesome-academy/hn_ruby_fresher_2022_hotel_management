@@ -23,6 +23,7 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 require("bootstrap")
+require("@nathanvda/cocoon")
 
 import "./admin/adminlte"
 import "./admin/bootstrap.bundle.min"
