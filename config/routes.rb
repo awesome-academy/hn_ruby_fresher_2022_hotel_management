@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 
     resources :dash_broads, only: :index
     resources :rooms
+    resources :room_views, only: :index
   end
 end

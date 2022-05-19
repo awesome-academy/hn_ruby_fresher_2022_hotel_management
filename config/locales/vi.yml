@@ -41,7 +41,7 @@ vi:
     rooms:
       index:
         title: "Danh sách các phòng"
-        id: "ID"
+        id: "STT"
         name: "Tên"
         price: "Giá"
         status: "Tình trạng"
@@ -49,6 +49,13 @@ vi:
         provide_title: "Quản lý phòng"
         create_btn: "Tạo phòng mới"
         view_all_btn: "Xem tất cả các phòng"
+    room_views:
+      index:
+        provide_title: "Quang cảnh phòng"
+        title: "Quang cảnh phòng"
+        id: "STT"
+        name: "Tên"
+        create_btn: "Tạo chế độ xem phòng"
     dash_broad:
       sidebar:
         rooms_sidebar: "Quản lý phòng"
