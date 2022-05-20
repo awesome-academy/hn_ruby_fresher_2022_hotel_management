@@ -5,6 +5,7 @@ ruby "3.0.2"
 
 gem "bcrypt", "~> 3.1", ">= 3.1.12"
 gem "bootsnap", ">= 1.4.4", require: false
+gem "cocoon"
 gem "config"
 gem "jbuilder", "~> 2.7"
 gem "jquery-rails"

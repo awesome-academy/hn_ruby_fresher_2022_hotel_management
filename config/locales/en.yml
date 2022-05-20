@@ -49,6 +49,16 @@ en:
         provide_title: "Manage Rooms"
         create_btn: "Create new room"
         view_all_btn: "View All Rooms"
+      new:
+        title: "Create new room"
+        provide_title: "Create new room"
+        name: "Name"
+        price: "Price"
+        description: "Description"
+        add_image: "Add Image"
+        btn_create: "Create new room"
+      image_fields:
+        remove_image: "Remove image"
     room_views:
       index:
         provide_title: "Room Views"
@@ -64,5 +74,13 @@ en:
         name: "Name"
         btn_create: "Create room view"
     dash_broad:
+      new:
+        name: "Name"
+        price: "Price"
+        description: "Description"
+        btn_create: "Create Room"
+        provide_title: "Create Room"
+        title: "Create Room"
+    dash_broads:
       sidebar:
         rooms_sidebar: "Manage Rooms"

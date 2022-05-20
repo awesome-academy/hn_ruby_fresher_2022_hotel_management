@@ -10,6 +10,24 @@ admin:
   room:
     pagy:
       max_length: 10
+    new:
+      description:
+        max_length: 5000
+      price:
+        min: 0
+      name: 50
+  room:
+    name:
+      max_length: 50
+    description:
+      max_length: 5000
+    greater:
+      min_length: 0
+    less:
+      max_length: 1000000
   room_view:
     name:
       max_length: 100
+models:
+  room: [80, 90]
+  images_format: ["image/jpeg", "image/gif", "image/png"]
