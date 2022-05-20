@@ -52,11 +52,15 @@ vi:
       new:
         title: "Tạo phòng mới"
         provide_title: "Tạo phòng mới"
+      edit:
+        title: "Cập nhật phòng"
+        provide_title: "Cập nhật phòng"
+      form:
         name: "Tên"
         price: "Giá"
-        description: "Description"
+        description: "Mô tả"
         add_image: "Thêm hình ảnh"
-        btn_create: "Tạo phòng mới"
+        btn_create: "Hoàn thành"
       image_fields:
         remove_image: "Xóa hình ảnh"
     room_views:
