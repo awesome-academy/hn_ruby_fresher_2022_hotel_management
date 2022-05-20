@@ -52,13 +52,21 @@ en:
       new:
         title: "Create new room"
         provide_title: "Create new room"
+      edit:
+        title: "Update room"
+        provide_title: "Update room"
+      form:
         name: "Name"
         price: "Price"
         description: "Description"
         add_image: "Add Image"
-        btn_create: "Create new room"
+        btn_create: "Done"
       image_fields:
         remove_image: "Remove image"
+      create:
+        flash_sucsses: "Create Success"
+      update:
+        room_updated: "Room Update"
     room_views:
       index:
         provide_title: "Room Views"
