@@ -3,4 +3,5 @@ class RoomView < ApplicationRecord
 
   validates :name, presence: true,
             length: {maximum: Settings.admin.room_view.name.max_length}
+
 end

@@ -1,7 +1,7 @@
 class Room < ApplicationRecord
-  UPDATETABLE_ATTRS = %i(name price description status user_id
+  UPDATETABLE_ATTRS = %i(name price description status bed size user_id
     room_view_id).push(images_attributes: [:imageable_id, :imageable_url,
-    :imageable_type, :_destroy]).freeze
+    :imageable_type, :image, :_destroy]).freeze
 
   has_many :images, as: :imageable, dependent: :destroy
   has_many :booking_rooms, dependent: :destroy
@@ -17,10 +17,4 @@ class Room < ApplicationRecord
   validates :price, presence: true,
             numericality: {greater_than: Settings.admin.room.greater.min_length,
                            less_than: Settings.admin.room.less.max_length}
-
-  has_many_attached :image
-
-  def display_image
-    image.variant resize_to_limit: Settings.models.room
-  end
 end

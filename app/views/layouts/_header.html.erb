@@ -5,11 +5,8 @@
   <nav class="main-menu top-menu">
     <ul>
         <li class="active"><a href="index.html"><%= t ".home" %></a></li>
-        <li><a href="about.html"><%= t ".about" %></a></li>
-        <li><a href="room.html"><%= t ".room" %></a></li>
-        <li><a href="amenities.html"><%= t ".amenities" %></a></li>
+          <li><%= link_to t(".room"), rooms_path %></li>
         <li><a href="booking.html"><%= t ".booking" %></a></li>
-        <li><a href="contact.html"><%= t ".contact" %></a></li>
         <% if logged_in? %>
           <li><%= link_to t(".account"), "#" %></li>
           <li><%= link_to t(".log_out"), logout_path, method: :delete %></li>
