@@ -89,6 +89,18 @@ en:
       new:
         provide_title: "Create room view"
         title: "Create room view"
+      destroy:
+        flash_sucsses: "Delete Success"
+      room_view:
+        delete: "Delete"
+        confirm_message: "You want delete?"
+      update:
+        flash_sucsses: "Update Sucsses"
+        flash_error: "Can not Update"
+      edit:
+        title: "Update Room View"
+        provide_title: "Update Room View"
+      form:
         name: "Name"
         btn_create: "Create room view"
       destroy:
@@ -97,6 +109,7 @@ en:
       room_view:
         delete: "Delete"
         confirm_message: "You want delete?"
+        btn_create: "Done"
     dash_broads:
       sidebar:
         rooms_sidebar: "Manage Rooms"
