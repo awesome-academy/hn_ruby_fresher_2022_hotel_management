@@ -91,6 +91,12 @@ en:
         title: "Create room view"
         name: "Name"
         btn_create: "Create room view"
+      destroy:
+        flash_sucsses: "Delete Success"
+        flash_error: "Delete Error"
+      room_view:
+        delete: "Delete"
+        confirm_message: "You want delete?"
     dash_broads:
       sidebar:
         rooms_sidebar: "Manage Rooms"

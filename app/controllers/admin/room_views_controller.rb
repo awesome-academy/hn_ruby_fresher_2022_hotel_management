@@ -1,4 +1,6 @@
 class Admin::RoomViewsController < Admin::AdminController
+  before_action :find_room_view, only: :destroy
+
   def index
     @pagy, @room_views = pagy RoomView.all
   end
@@ -18,7 +20,21 @@ class Admin::RoomViewsController < Admin::AdminController
     end
   end
 
+  def destroy
+    if @room_view.destroy
+      flash[:success] = t ".flash_sucsses"
+    else
+      flash[:error] = t ".flash_error"
+    end
+    redirect_to admin_room_views_path
+  end
+
   private
+  def find_room_view
+    @room_view = RoomView.find_by id: params[:id]
+    redirect_to admin_room_views_path unless @room_view
+  end
+
   def room_view_params
     params.require(:room_view).permit :name
   end
