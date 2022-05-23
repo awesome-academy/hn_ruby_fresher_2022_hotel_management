@@ -91,6 +91,12 @@ vi:
         title: "Tạo chế độ xem phòng"
         name: "Tên"
         btn_create: "Tạo chế độ xem phòng"
+      destroy:
+        flash_sucsses: "Xóa thành công"
+        flash_error: "Xóa thất bại"
+      room_view:
+        delete: "Xóa"
+        confirm_message: "Bạn muốn xóa?"
     dash_broads:
       sidebar:
         rooms_sidebar: "Quản lý phòng"
