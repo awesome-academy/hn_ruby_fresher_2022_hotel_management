@@ -1,5 +1,5 @@
 class Admin::RoomViewsController < Admin::AdminController
-  before_action :find_room_view, only: :destroy
+  before_action :find_room_view, only: %i(edit update destroy)
 
   def index
     @pagy, @room_views = pagy RoomView.all
@@ -8,6 +8,8 @@ class Admin::RoomViewsController < Admin::AdminController
   def new
     @room_view = RoomView.new
   end
+
+  def edit; end
 
   def create
     @room_view = RoomView.new room_view_params
@@ -26,7 +28,15 @@ class Admin::RoomViewsController < Admin::AdminController
     else
       flash[:error] = t ".flash_error"
     end
-    redirect_to admin_room_views_path
+
+  def update
+    if @room_view.update room_view_params
+      flash[:success] = t ".flash_sucsses"
+      redirect_to admin_room_views_path
+    else
+      flash[:danger] = t ".flash_error"
+      render :edit
+    end
   end
 
   private
