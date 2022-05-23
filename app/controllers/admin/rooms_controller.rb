@@ -1,5 +1,5 @@
 class Admin::RoomsController < Admin::AdminController
-  before_action :find_room, only: %i(edit update)
+  before_action :find_room, only: %i(edit update destroy)
 
   def index
     @pagy, @rooms = pagy Room.all, items:
@@ -14,9 +14,10 @@ class Admin::RoomsController < Admin::AdminController
   def create
     @room = Room.new room_params
     if @room.save
-      flash[:success] = t ".flash_sucsses"
+      flash[:success] = t ".flash_succses"
       redirect_to admin_rooms_path
     else
+      flash[:danger] = t ".flash_error"
       render :new
     end
   end
@@ -25,16 +26,27 @@ class Admin::RoomsController < Admin::AdminController
 
   def update
     if @room.update room_params
-      flash[:success] = t ".room_updated"
+      flash[:success] = t ".flash_succses"
       redirect_to admin_rooms_path
     else
+      flash[:danger] = t ".flash_error"
       render :edit
     end
+  end
+
+  def destroy
+    if @room.destroy
+      flash[:success] = t ".flash_succses"
+    else
+      flash[:danger] = t ".flash_error"
+    end
+    redirect_to admin_rooms_path
   end
 
   private
   def find_room
     @room = Room.find_by(id: params[:id])
+    flash[:danger] = t ".flash_error"
     redirect_to admin_rooms_path unless @room
   end
 
