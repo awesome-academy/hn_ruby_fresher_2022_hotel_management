@@ -37,6 +37,15 @@ vi:
       btn_title: "Đăng nhập"
     create:
       flash_danger: "Kết hợp email / mật khẩu không hợp lệ"
+    rooms:
+      room:
+        size: "Kích thước:"
+        bed: "Giường ngủ:"
+        from: "Từ"
+        book_now: "Đặt bây giờ"
+        iamges_room: "Hình ảnh phòng"
+        title: "Những căn phòng của chúng ta"
+        service_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt."
   admin:
     rooms:
       index:

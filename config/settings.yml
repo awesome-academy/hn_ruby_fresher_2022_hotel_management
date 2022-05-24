@@ -6,6 +6,9 @@ user:
     min_length: 6
   name:
     max_length: 50
+  controller:
+    room:
+      max_item: 10
 admin:
   room:
     name:
@@ -28,7 +31,11 @@ admin:
         min: 0
       name:
         max_length: 50
+      bed:
+        max_length: 20
+      size:
+        max_length: 20
 models:
-  room: [80, 90]
+  room: [255, 215]
   images_format: ["image/jpeg", "image/gif", "image/png"]
-  image_size: 25MB
+  image_size: 5

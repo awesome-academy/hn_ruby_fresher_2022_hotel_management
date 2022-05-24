@@ -46,7 +46,6 @@ class Admin::RoomsController < Admin::AdminController
   private
   def find_room
     @room = Room.find_by(id: params[:id])
-    flash[:danger] = t ".flash_error"
     redirect_to admin_rooms_path unless @room
   end
 

@@ -37,6 +37,16 @@ en:
       btn_title: "Log in"
     create:
       flash_danger: "Invalid email/password combination"
+  rooms:
+    room:
+      size: "Size:"
+      bed: "Beds:"
+      from: "From"
+      book_now: "Book Now"
+      iamges_room: "Room Images"
+    index:
+      title: "Our Rooms"
+      service_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt."
   admin:
     rooms:
       index:

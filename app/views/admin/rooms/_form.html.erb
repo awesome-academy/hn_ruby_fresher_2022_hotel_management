@@ -11,6 +11,14 @@
     <%= f.label t(".description") %>
     <%= f.text_area :description, class: "form-control", max: Settings.admin.room_view.new.description.max_length %>
   </div>
+  <div class="field">
+    <%= f.label t(".beds") %>
+    <%= f.text_area :bed, class: "form-control", max: Settings.admin.room_view.new.bed.max_length %>
+  </div>
+  <div class="field">
+    <%= f.label t(".size") %>
+    <%= f.text_area :size, class: "form-control", max: Settings.admin.room_view.new.size.max_length %>
+  </div>
   <br>
   <div class="field">
     <%= f.label :room_view_id %>
