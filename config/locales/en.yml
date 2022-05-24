@@ -47,6 +47,11 @@ en:
     index:
       title: "Our Rooms"
       service_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt."
+      label_tag_room_view: "Room View"
+      label_tag_status: "Status"
+      label_tag_form_date: "From date"
+      label_tag_to_date: "To date"
+      btn_search: "Search"
   admin:
     rooms:
       index:
@@ -120,6 +125,11 @@ en:
         delete: "Delete"
         confirm_message: "You want delete?"
         btn_create: "Done"
+    booking_rooms:
+      index:
+        btn_title: "Delete"
+        confirm_message: "You want delete?"
+        provide_title: "Booking"
     dash_broads:
       sidebar:
         rooms_sidebar: "Manage Rooms"
