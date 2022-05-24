@@ -28,6 +28,7 @@ class Admin::RoomViewsController < Admin::AdminController
     else
       flash[:error] = t ".flash_error"
     end
+  end
 
   def update
     if @room_view.update room_view_params

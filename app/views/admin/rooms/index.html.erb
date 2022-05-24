@@ -34,7 +34,8 @@
                 <div class="sparkbar"><%= room.description %></div>
               </td>
               <td><%= link_to ".delete", [:admin, room], method: :delete,
-                                          data: { confirm: ".confirm" } %></td>
+                                          remote: :true,
+                                          class: "destroy-room" %></td>
             </tr>
           <% end %>
         </tbody>
