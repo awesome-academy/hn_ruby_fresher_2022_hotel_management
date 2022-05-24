@@ -35,12 +35,12 @@ class Admin::RoomsController < Admin::AdminController
   end
 
   def destroy
-    if @room.destroy
-      flash[:success] = t ".flash_succses"
-    else
-      flash[:danger] = t ".flash_error"
+    @room.destroy
+    respond_to do |format|
+      format.html{redirect_to rooms_path, notice: t(".flash_succses")}
+      format.json{head :no_content}
+      format.js{render layout: false}
     end
-    redirect_to admin_rooms_path
   end
 
   private
