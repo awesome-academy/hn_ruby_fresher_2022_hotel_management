@@ -5,6 +5,7 @@ class RoomsController < ApplicationController
       Room.search_by_room_view(params).search_by_status(params),
       items: Settings.user.controller.room.max_item
     )
+    @booking_room = BookingRoom.new
   end
 
   private

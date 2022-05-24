@@ -52,6 +52,10 @@ en:
       label_tag_form_date: "From date"
       label_tag_to_date: "To date"
       btn_search: "Search"
+  booking_rooms:
+    create:
+      flash_succes: "Send request success"
+      flash_error: "Send request error"
   admin:
     rooms:
       index:

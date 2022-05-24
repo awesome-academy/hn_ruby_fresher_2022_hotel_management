@@ -33,9 +33,9 @@
               <td><%=  booking_room.from_date%> </td>
               <td><%=  booking_room.to_date%> </span></td>
               <td><%= link_to booking_room.status, [:admin, booking_room], method: :put,
-                                          class:"btn btn-primary"%></td>
-              <td><%= link_to t(".btn_title"), [:admin, room_view], method: :delete,
-                                          data: { confirm: t ".confirm_message" } %></td>
+                                          class:"btn btn-primary" %></td>
+              <td><%= link_to t(".btn_title"), [:admin, booking_room], method: :delete,
+                                          data: { confirm: t(".confirm_message") } %></td>
             </tr>
           <% end %>
         </tbody>
