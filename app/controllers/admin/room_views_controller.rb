@@ -23,11 +23,12 @@ class Admin::RoomViewsController < Admin::AdminController
   end
 
   def destroy
-    if @room_view.destroy
-      flash[:success] = t ".flash_sucsses"
-    else
-      flash[:error] = t ".flash_error"
+    @room_view.destroy
+    respond_to do |format|
+      format.html{redirect_to room_view_path, notice: t(".flash_succses")}
+      format.js{render layout: false}
     end
+  end
 
   def update
     if @room_view.update room_view_params

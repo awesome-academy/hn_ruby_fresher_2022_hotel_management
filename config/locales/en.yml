@@ -44,9 +44,23 @@ en:
       from: "From"
       book_now: "Book Now"
       iamges_room: "Room Images"
+      room:
+      placeholder_name: "Full name"
+      placeholder_phone: "123-45-678"
+      placeholder_date: "DD/MM/YYYY"
+      btn_title: "Submit"
     index:
       title: "Our Rooms"
       service_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt."
+      label_tag_room_view: "Room View"
+      label_tag_status: "Status"
+      label_tag_form_date: "From date"
+      label_tag_to_date: "To date"
+      btn_search: "Search"
+  booking_rooms:
+    create:
+      flash_succes: "Send request success"
+      flash_error: "Send request error"
   admin:
     rooms:
       index:
@@ -73,6 +87,8 @@ en:
         description: "Description"
         add_image: "Add Image"
         btn_create: "Done"
+        size: "Size:"
+        bed: "Beds:"
       image_fields:
         remove_image: "Remove image"
       create:
@@ -120,6 +136,11 @@ en:
         delete: "Delete"
         confirm_message: "You want delete?"
         btn_create: "Done"
+    booking_rooms:
+      index:
+        btn_title: "Delete"
+        confirm_message: "You want delete?"
+        provide_title: "Booking"
     dash_broads:
       sidebar:
         rooms_sidebar: "Manage Rooms"

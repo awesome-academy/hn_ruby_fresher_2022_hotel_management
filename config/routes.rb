@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :rooms
+  resources :booking_rooms
 
   namespace :admin do
     root "dash_broads#index"
@@ -14,5 +15,6 @@ Rails.application.routes.draw do
     resources :dash_broads, only: :index
     resources :rooms
     resources :room_views
+    resources :booking_rooms
   end
 end

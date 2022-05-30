@@ -40,7 +40,9 @@
       <div class="room-rate">
         <h3><%= t ".from" %></h3>
         <h1><%= number_to_currency(room.price, locale: :en, :delimiter => ",") %></h1>
-        <a href="#"><%= t ".book_now" %></a>
+        <% if logged_in? %>
+          <button class="btn btn-block btn-action btn-book" data-toggle="modal" data-target="#exampleModal<%= room.id %>"><%= t ".book_now" %></button>
+        <% end %>
       </div>
     </div>
   </div>
@@ -56,10 +58,50 @@
         </button>
       </div>
       <div class="modal-body">
-        <% room.images.each do |image| %>
-          <%= image_tag image.display_image %>
+        <% room.images.with_attached_image.each do |image| %>
+          <%= image_tag image.display_image if image.image.attached? %>
         <% end %>
       </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal<%= room.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <%= form_for @booking_room do |f| %>
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Booking Room:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: "form-control", placeholder: t(".placeholder_name")%>
+          </div>
+          <div class="form-group">
+          <%= f.label :phone_number %>
+          <%= f.text_field :phone_number, class: "form-control", placeholder: t(".placeholder_phone")%>
+          </div>
+          <div class="form-group">
+          <%= f.label :from_date %>
+          <%= f.text_field :from_date, class: "form-control", placeholder:  t(".placeholder_date") %>
+          </div>
+          <div class="form-group">
+          <%= f.label :to_date %>
+          <%= f.text_field :to_date, class: "form-control", placeholder: t(".placeholder_date")%>
+          </div>
+          <div class="form-group">
+          <%= f.label :description %>
+          <%= f.text_area :description, class: "form-control" %>
+          </div>
+          <%= f.hidden_field :room_id, value: room.id %>
+        </div>
+        <div class="modal-footer">
+          <%= f.submit t(".btn_title"), class: "btn btn-primary" %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

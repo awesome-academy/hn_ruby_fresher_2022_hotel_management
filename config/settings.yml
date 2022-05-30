@@ -8,7 +8,7 @@ user:
     max_length: 50
   controller:
     room:
-      max_item: 10
+      max_item: 5
 admin:
   room:
     name:

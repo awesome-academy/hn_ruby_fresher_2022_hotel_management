@@ -6,6 +6,6 @@ module ApplicationHelper
   end
 
   def image_first room
-    image_tag room.images.first&.display_image if room.images.first
+    image_tag room.images.first&.display_image if room.images.first && room.images.first.image.attached?
   end
 end
