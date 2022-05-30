@@ -17,4 +17,20 @@ class Room < ApplicationRecord
   validates :price, presence: true,
             numericality: {greater_than: Settings.admin.room.greater.min_length,
                            less_than: Settings.admin.room.less.max_length}
+
+  scope :filter_room_view, (lambda do |room_view_id|
+      where(room_view_id: room_view_id) if room_view_id.present?
+  end)
+
+  scope :search_by_status, (lambda do |params|
+    return unless params[:from_date].present? && params[:to_date].present? && params[:status]
+
+    room_ids = BookingRoom.filter_by_time(params[:from_date],
+                                          params[:to_date])
+    where.not(id: room_ids)
+  end)
+
+  def display_image
+    image.variant resize_to_limit: Settings.models.room
+  end
 end
