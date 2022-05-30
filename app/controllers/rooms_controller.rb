@@ -3,7 +3,7 @@ class RoomsController < ApplicationController
     @room_views = RoomView.all
     @booking_room = BookingRoom.new
     @pagy, @rooms = pagy(
-      Room.includes(:booking_rooms).filter_room_view(params[:room_view_id]).search_by_status(params),
+      Room.includes(:booking_rooms).search_by_status(params),
       items: Settings.user.controller.room.max_item
     )
   end
